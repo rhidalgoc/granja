@@ -1,0 +1,35 @@
+<mat-toolbar class="toolCatalogo" fxLayout="row" fxLayoutAlign="space-between center">
+    <span>Seleccione los animales de la granja</span>
+</mat-toolbar>
+
+<div mat-dialog-content>
+    <div class="contenedor">
+        <ul>
+            <li *ngFor="let item of NoSeleccionados; let index = index" (click)="seleccionar(item, index)"><img [src]="item.url"></li>
+        </ul>
+        <div class="div-botones">
+           <button type="button" (click)="seleccionarTodo()">>></button>
+           <button type="button" (click)="deseleccionarTodo()"><<</button>
+        </div>
+        <ul>
+            <li *ngFor="let item of Seleccionados; let index = index" (click)="deseleccionar(item, index)"><img [src]="item.url"></li>
+        </ul>
+    </div>
+</div>
+<!--<div mat-dialog-actions>
+  
+</div>-->
+
+<mat-card-footer class="cardfooter" fxLayout="row" fxLayoutAlign="end center">
+    <button mat-button color="primary" (click)="cerrar()">
+        <mat-icon>
+            close
+        </mat-icon><h2 class="botones">Cancelar</h2> 
+    </button>
+    <!-- <button fxFlex="auto" mat-button color="accent" [disabled]="form.invalid" form="formularioUsuario"> -->
+    <button mat-button color="accent" (click)="validar()">
+        <mat-icon>
+            check
+        </mat-icon><h2 class="botones">Validar</h2> 
+    </button>
+</mat-card-footer>

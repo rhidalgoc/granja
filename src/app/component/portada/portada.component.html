@@ -1,0 +1,37 @@
+<main class="contenedor contenido-principal text-center">
+    <section class="conoce">
+        <div class="encabezado">
+            <img src="../../../assets/fotos/paulo.jpg">
+            <div class="datos">
+                <h5>Magic Garden</h5>
+                <h5>Paulo Hidalgo</h5>
+                <h5>Kinder B</h5>
+            </div>
+            <h1 class="titulogranja">Granja de Animales</h1>
+            <button mat-raised-button color="accent" [matMenuTriggerFor]="menu"><span>Actividades</span></button>
+            <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="openDialog()">Selector de imágenes</button>
+            <button mat-menu-item (click)="abrirCuestionario()">Preguntas</button>
+            </mat-menu>
+        </div>
+        <h2 class="beneficios">Beneficios para el ser humano</h2>
+    </section>
+    <section class="servicios">
+        <div class="servicio">
+            <span style="width:75%;border-radius: 10px;" [ngClass]="alimentoActivo == 1 ? 'badge bg-light' : 'None'"><img src="../../../assets/fotos/letreroAlimentos.png" (click)="abrirAlimento()"></span>
+        </div>
+        <div class="servicio">
+            <span style="width:75%;border-radius: 10px;" [ngClass]="abrigoActivo == 1 ? 'badge bg-light' : 'None'"><img src="../../../assets/fotos/letreroAbrigos.png" (click)="abrirAbrigo()"></span>
+        </div>
+        <div class="servicio">
+            <span style="width:75%;border-radius: 10px;" [ngClass]="trabajoActivo == 1 ? 'badge bg-light' : 'None'"><img src="../../../assets/fotos/letreroTrabajos.png" (click)="abrirTrabajo()"></span>
+        </div>
+    </section>
+
+    <app-alimento [alimentos]="alimentos"></app-alimento>
+
+    <app-abrigo [abrigo]="abrigo"></app-abrigo>
+
+    <app-trabajo [trabajo]="trabajo"></app-trabajo>
+
+</main>

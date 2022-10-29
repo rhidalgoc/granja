@@ -1,0 +1,35 @@
+@use './assets/base/mixins' as m;
+
+/* You can add global styles to this file, and also import other style files */
+html {
+    box-sizing: border-box;
+    font-size: 82.5%; /* 1REM = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+/*html, body { height: 100%; }*/
+body {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-meadow-purple-wildflowers-blue-sky-white-clouds-background-image_260550.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height:100vh;
+
+    margin-top:.5rem;
+    margin-bottom:7rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+
+    @include m.tablet { 
+        margin-top:7rem;
+  
+     }  
+}
+
+
+@import "@angular/material/prebuilt-themes/indigo-pink.css";

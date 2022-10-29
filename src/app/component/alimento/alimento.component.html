@@ -1,0 +1,27 @@
+
+    <section class="portafolios contenedor" *ngIf="alimentos">
+        <section class="diseñoweb">
+            <div class="portafolios__grid contenedor">
+                <div class="portafolio">
+                    <span [ngClass]="lacteosActivo == 1 ? 'badge bg-danger' : 'None'"><img class="portafolio__imagen" (click)="abrirLacteosAnimales()" src="https://www.fedeleche.cl/ww5/images/NOTICIAS/2022/n_20220610_0101.jpg" alt="lacteos"></span>
+                    <h3 class="portafolio__heading"><span (click)="abrirLacteosAnimales()">Lacteos</span></h3>
+                </div>
+
+                <div class="portafolio">
+                    <span [ngClass]="huevosActivo == 1 ? 'badge bg-danger' : 'None'"><img class="portafolio__imagen" (click)="abrirHuevosAnimales()" src="https://mejorconsalud.as.com/wp-content/uploads/2016/11/cesta-huevos-mesa.jpg" alt="huevos"></span>
+                    <h3 class="portafolio__heading"><span (click)="abrirHuevosAnimales()" >Huevos</span></h3>
+                </div>
+
+                <div class="portafolio">
+                    <span [ngClass]="carnesActivo == 1 ? 'badge bg-danger' : 'None'"><img class="portafolio__imagen" (click)="abrirCarnesAnimales()"  src="https://www.edualimentaria.com/images/carnes/carnes-derivados-cecinas.jpg" alt="carnes"></span>
+                    <h3 class="portafolio__heading"><span (click)="abrirCarnesAnimales()" >Carnes</span></h3>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <app-lacteos [lacteos]="lacteos"></app-lacteos>
+
+    <app-huevo [huevos]="huevos"></app-huevo>
+
+    <app-carne [carnes]="carnes"></app-carne>

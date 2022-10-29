@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+
+/*h1, h2, h3 {
+    margin: 0;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.2rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+[class$="heading"] {
+    margin: 2rem 0;
+}
+a {
+    text-decoration: none;
+}*/
+
+
+h1,h2,h3{
+    font-family: v.$fuentePrincipal;
+    margin: 0 0 v.$separacion 0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.7rem;
+}
+h1{
+    font-size:3rem;
+}
+
+h2{
+    font-size:3rem;
+    padding-top: 1rem;
+    color: v.$primario;
+    margin-bottom: 6rem;
+
+    span{
+        color: v.$secundario;
+        line-height:5rem;
+        font-size: 1.7rem;
+        font-style: italic;
+        display: block;     // fuerzo el salto de linea
+    }
+}
+
+h3{
+    font-size:2.5rem;
+}
+
+
+[class$="heading"] {
+    margin: 2rem 0;
+}
+
+a {
+    text-decoration: none;
+}

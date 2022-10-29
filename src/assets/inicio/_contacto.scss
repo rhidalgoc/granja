@@ -1,0 +1,78 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-contacto{
+    background-color: v.$grisClaro;
+    padding: 2rem;
+    background-image: url(../../../build/img/logoOficial3.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 90%;
+    margin: auto 2rem 2rem 2rem;
+    border-radius: 1rem;;
+
+    @include m.tablet { 
+        //@include m.grid(2, 5rem); 
+        padding: 2rem 5rem;
+        margin:auto 10rem 10rem 10rem;
+        background-size: 60%;
+     }
+
+     @include m.desktop{
+        padding: 2;
+        margin:auto 25rem auto 25rem;
+     }
+}
+
+.formulario{            // ahora este es el selector principal
+    .campo{
+        margin-bottom: 1.7rem;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        label{
+            text-transform: uppercase;
+            display: block;
+            font-size:1.5rem;
+            font-weight:700;
+            text-align: left;
+            color: v.$secundario;
+        }
+
+        /*input[type="text"],
+        input[type="time"],
+        input[type="date"],
+        input[type="email"]{
+
+        } o codigo posterior*/
+
+        input:not([type="submit"]),
+        select,
+        textarea {     // selecciones todos los submit excepto los submit, y además seleccione el select
+            width: 100%;
+            border: .1rem solid v.$primario;
+            font-size: 1.5rem;
+        }
+
+        input:not([type="submit"]),
+        select{
+            height:2.5rem;
+        }
+        
+        input[type="submit"]{
+            background-color: v.$primario;
+            color: v.$blanco;
+            width: 100%;
+            border:none;
+            padding:.8rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

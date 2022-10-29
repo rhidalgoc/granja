@@ -1,0 +1,81 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.text-center{
+    text-align: center;
+}
+
+.bg-primario{
+    background-color: v.$primario;
+}
+
+.bg-white{
+    background-color: v.$blanco;
+}
+
+.margin-negativo-10{
+    margin-top: -10rem;
+}
+
+.padding-bottom-0{
+    padding-bottom:0;
+}
+
+.margin-descripcion{
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    margin-left:10px;
+    color: darken(v.$secundario,20%);
+    text-align:left;
+    font-size: 2rem;
+
+    &::first-letter{
+        color: v.$primario;
+        font-size: 3.5rem;
+        font-family: v.$fuenteSecundaria;
+        font-weight: 900;
+    }
+
+    @include m.tablet{
+        margin-bottom: 2rem;
+    }
+}
+
+.conoce{
+    &__descripcion{
+        text-align: left;
+    }
+}
+
+.separacion_seccion{
+    border: .2rem solid v.$grisClaro;
+    width: 50%;
+    margin:0 auto;
+}
+
+.conoce{
+    &__descripcion{
+        p{
+            .llamame{
+                color: darken(v.$primario,15%);
+                font-style: oblique;
+                font-size: 2rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.btn-whatsapp {
+    display:block;
+    width:100px;
+    height:100px;
+    color:#fff;
+    position: fixed;
+    right:-83px;
+    bottom:387px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+    z-index:999;
+}
