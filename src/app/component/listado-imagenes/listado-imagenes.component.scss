@@ -22,13 +22,11 @@
 
     max-width: 1200px;
     margin: 0 auto;
-    background-image: url(https://media.istockphoto.com/vectors/fence-background-vector-id112800633?k=20&m=112800633&s=170667a&w=0&h=gy0U-mEfM0zwQBj_m-m8txCpxgsJp94c9WtvqVME_GA=);
 
     @include m.tablet{
         width: 95%;
     }
 }
-
 
 .portafolios{
 
@@ -37,13 +35,14 @@
 
         background-color: v.$grisClaro;
         padding:1rem 1rem 1rem 1rem;
-        border-radius: 1rem; 
+        border-radius: 1rem;  
         width: 95%;
+        margin-bottom: 1rem;
 
-        @include m.grid(2,3rem);
+        @include m.grid(3,3rem);
 
         @include m.tablet { 
-            @include m.grid(4, 3rem);
+            @include m.grid(3, 3rem);
             row-gap: 0;
             width: 100%;
             padding:2.5rem 2.5rem 0 2.5rem;
@@ -62,7 +61,7 @@
 
 
          &__imagen{
-             width:95%;
+             width:100%;
              border: .5rem solid v.$blanco;
              transition-property: rotate scale;
              transition-duration: 300ms;
@@ -71,7 +70,7 @@
              cursor: pointer;
 
              @include m.tablet{
-                width: 90%;
+                width:90%;
              }
              
              &:hover{
@@ -99,16 +98,16 @@
              cursor: pointer;
 
              span{
-                font-size:1.5rem;
-                color:v.$red;
-                font-weight:bold;
-                font-family: Chicle;
+                 font-size:1.5rem;
+                 color:v.$granja;
                  padding:0;
+                 font-family: 'Chicle';
 
                  @include m.tablet{
                     font-size:2.5rem;
                  }
 
+     
              }
          }
 
@@ -117,6 +116,15 @@
             display: block;
             font-size: 1.5rem;
          }
+
+span{
+    width:110%;
+    border-radius: 10px;
+
+    @include m.tablet{
+        width:100%;
     }
 }
 
+    }
+}

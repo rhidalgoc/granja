@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "nombre": "LACTEOS",
+      "imagen":"https://www.fedeleche.cl/ww5/images/NOTICIAS/2022/n_20220610_0101.jpg",
+      "categoria": "Alimento",
+      "sonido": ""
+    },
+
+    {
+      "id": 2,
+      "nombre": "HUEVOS",
+      "imagen":"https://mejorconsalud.as.com/wp-content/uploads/2016/11/cesta-huevos-mesa.jpg",
+      "categoria": "Alimento",
+      "sonido": ""
+    },
+
+    {
+      "id": 3,
+      "nombre": "CARNES",
+      "imagen":"https://www.edualimentaria.com/images/carnes/carnes-derivados-cecinas.jpg",
+      "categoria": "Alimento",
+      "sonido": ""
+    },
+
+    {
+      "id": 4,
+      "nombre": "LANA",
+      "imagen":"https://images.ctfassets.net/86mn0qn5b7d0/featured-img-of-post-139172/0e5e6d5edd923aa442b3bab8c1bcf462/featured-img-of-post-139172.jpg?fm=jpg&fl=progressive&q=50&w=1200",
+      "categoria":"Abrigo",
+      "sonido": ""
+    },
+
+    {
+      "id": 5,
+      "nombre": "CUERO",
+      "imagen":"https://curtidosmenacho.com/modules/ph_simpleblog/featured/48.jpg",
+      "categoria":"Abrigo",
+      "sonido": ""
+    },
+
+    {
+      "id": 6,
+      "nombre": "CABALGAR",
+      "imagen":"https://www.ridingpics.de/857_1_1578902715.jpg",
+      "categoria": "Trabajo",
+      "sonido": "../assets/sonidos/galopar.mp3"
+    },
+
+    {
+      "id": 7,
+      "nombre": "CARGA",
+      "imagen":"https://thumbs.dreamstime.com/b/el-asno-im%C3%A1genes-de-los-burros-asnos-del-s-del-pastor-cargo-hermoso-que-lleva-una-carga-burro-del-sable-burro-negro-asno-amable-91123981.jpg",
+      "categoria": "Trabajo",
+      "sonido": "../assets/sonidos/burro.wav"
+    },
+
+    {
+      "id": 8,
+      "nombre": "ARAR",
+      "imagen":"https://venezuelaunida.com/wp-content/uploads/2021/05/hemos-retrocedido-unos-dos-siglos-por-la-falta-de-diesel-ahora-vemos-mas-bueyes-arando-la-tierra.jpg",
+      "categoria": "Trabajo",
+      "sonido": "../assets/sonidos/vaca 3.wav"
+    }
+  ]

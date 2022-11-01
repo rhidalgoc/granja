@@ -18,20 +18,28 @@
     </section>
     <section class="servicios">
         <div class="servicio">
-            <span style="width:75%;border-radius: 10px;" [ngClass]="alimentoActivo == 1 ? 'badge bg-light' : 'None'"><img src="../../../assets/fotos/letreroAlimentos.png" (click)="abrirAlimento()"></span>
+            <span style="width:75%;border-radius: 10px;" 
+            [ngClass]="alimentoActivo == 1 ? 'badge bg-light' : 'None'">
+                <img src="../../../assets/fotos/letreroAlimentos.png" (click)="abrirProducto(1)">
+            </span>
         </div>
         <div class="servicio">
-            <span style="width:75%;border-radius: 10px;" [ngClass]="abrigoActivo == 1 ? 'badge bg-light' : 'None'"><img src="../../../assets/fotos/letreroAbrigos.png" (click)="abrirAbrigo()"></span>
+            <span style="width:75%;border-radius: 10px;" 
+            [ngClass]="abrigoActivo == 1 ? 'badge bg-light' : 'None'">
+                <img src="../../../assets/fotos/letreroAbrigos.png" (click)="abrirProducto(2)">
+            </span>
         </div>
         <div class="servicio">
-            <span style="width:75%;border-radius: 10px;" [ngClass]="trabajoActivo == 1 ? 'badge bg-light' : 'None'"><img src="../../../assets/fotos/letreroTrabajos.png" (click)="abrirTrabajo()"></span>
+            <span style="width:75%;border-radius: 10px;" 
+            [ngClass]="trabajoActivo == 1 ? 'badge bg-light' : 'None'">
+                <img src="../../../assets/fotos/letreroTrabajos.png" (click)="abrirProducto(3)">
+            </span>
         </div>
     </section>
 
-    <app-alimento [alimentos]="alimentos"></app-alimento>
-
-    <app-abrigo [abrigo]="abrigo"></app-abrigo>
-
-    <app-trabajo [trabajo]="trabajo"></app-trabajo>
+    <app-listado-imagenes 
+    [productos] = "listProductos"
+    [animalesMostrar] = "animalesMostrar">
+    </app-listado-imagenes>
 
 </main>

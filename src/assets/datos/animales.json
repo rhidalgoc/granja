@@ -1,0 +1,105 @@
+[
+    {
+      "id": 1,
+      "nombre": "VACA",
+      "imagen":"https://img.freepik.com/fotos-premium/mujer-ordenando-vaca_23-2148568659.jpg",
+      "idproducto": 1,
+      "sonido": "../assets/sonidos/vaca 3.wav"
+    },
+
+    {
+      "id": 2,
+      "nombre": "CABRA",
+      "imagen":"https://i.ytimg.com/vi/R6OWtYOCUps/maxresdefault.jpg",
+      "idproducto": 1,
+      "sonido": "../assets/sonidos/cabra 1.wav"
+    },
+
+    {
+      "id": 3,
+      "nombre": "BURRA",
+      "imagen":"https://media.elmostrador.cl/2017/04/burra-leche-468x274.jpg",
+      "idproducto": 1,
+      "sonido": "../assets/sonidos/burro.wav"
+    },
+
+    {
+      "id": 4,
+      "nombre": "GALLINA",
+      "imagen":"https://paragallinasponedoras.com/wp-content/uploads/2018/11/01-1-e1605569134487.jpg.webp",
+      "idproducto": 2,
+      "sonido": "../assets/sonidos/gallina 2.wav"
+    },
+
+    {
+      "id": 5,
+      "nombre": "GANSA",
+      "imagen":"https://ventadehuevos.com/wp-content/uploads/2018/07/huevos-de-ganso-guatemala.jpg",
+      "idproducto": 2,
+      "sonido": "../assets/sonidos/ganzos 2.wav"
+    },
+
+    {
+      "id": 6,
+      "nombre": "PAVA",
+      "imagen":"https://eggcurry.in/wp-content/uploads/2022/06/image-1.png",
+      "idproducto": 2,
+      "sonido": "../assets/sonidos/pavo.mp3"
+    },
+
+    {
+      "id": 7,
+      "nombre": "VACA",
+      "imagen":"https://upload.wikimedia.org/wikipedia/commons/0/07/20100516_Vacas_Vilarromar%C3%ADs%2C_Oroso-8-1.jpg",
+      "idproducto": 3,
+      "sonido": "../assets/sonidos/vaca 3.wav"
+    },
+
+    {
+      "id": 8,
+      "nombre": "CERDO",
+      "imagen":"https://thumbs.dreamstime.com/b/cerdos-libres-del-rango-102925194.jpg",
+      "idproducto": 3,
+      "sonido": "../assets/sonidos/chancho 5.wav"
+    },
+
+    {
+      "id": 9,
+      "nombre": "GALLINA",
+      "imagen":"https://i.ytimg.com/vi/PABhNSkgzK8/hqdefault.jpg",
+      "idproducto": 3,
+      "sonido": "../assets/sonidos/gallina 2.wav"
+    },
+
+    {
+      "id": 10,
+      "nombre": "PATO",
+      "imagen":"https://thumbs.dreamstime.com/b/pato-en-la-granja-42678482.jpg",
+      "idproducto": 3,
+      "sonido": "../assets/sonidos/PATO.mp3"
+    },
+
+    {
+      "id": 11,
+      "nombre": "OVEJA",
+      "imagen":"https://1.bp.blogspot.com/-atJDcartRvQ/YMKz4EjqLjI/AAAAAAAAC4o/pMGCPaQzmOo2m_XFlIF-wSteApaXakDkgCLcBGAsYHQ/s602/a-las-ovejas-les-duele-cuando-les-cortan-la-lana.jpg",
+      "idproducto": 4,
+      "sonido": "../assets/sonidos/OVEJA.wav"
+    },
+
+    {
+      "id": 12,
+      "nombre": "VACA",
+      "imagen":"https://upload.wikimedia.org/wikipedia/commons/0/07/20100516_Vacas_Vilarromar%C3%ADs%2C_Oroso-8-1.jpg",
+      "idproducto": 5,
+      "sonido": "../assets/sonidos/vaca 3.wav"
+    },
+
+    {
+      "id": 13,
+      "nombre": "CABRA",
+      "imagen":"https://thumbs.dreamstime.com/b/cabra-2026860.jpg",
+      "idproducto": 5,
+      "sonido": "../assets/sonidos/cabra 1.wav"
+    }
+  ]

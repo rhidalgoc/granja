@@ -47,6 +47,7 @@ correctas:MultipleSelectorModel[] =[
 }
 
 seleccionar(item:MultipleSelectorModel, index:number) {
+  this.playSound();
   this.Seleccionados.push(item);
   this.NoSeleccionados.splice(index, 1);  // para que no se repita en los Seleccionados
 }
@@ -62,6 +63,7 @@ deseleccionarTodo(){
 }
 
 deseleccionar(item:MultipleSelectorModel, index:number){
+  this.playSound();
   this.NoSeleccionados.push(item);
     this.Seleccionados.splice(index, 1);    // para que no se repita en los NoSeleccionados
 }
@@ -108,6 +110,13 @@ validar(){
     console.log(animal.llave);
   }*/
 
+}
+
+playSound(){
+  let audio = new Audio();
+  audio.src = "../../../assets/sonidos/click.mp3";
+  audio.load();
+  audio.play();
 }
 
 }

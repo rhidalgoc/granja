@@ -13,8 +13,13 @@ export class PortadaComponent implements OnInit {
 
   constructor(private servicioParametros:ServiceParametrosService, public dialog: MatDialog, private router:Router) { }
 
+  listProductos: any[] = [];
+
   ngOnInit(): void {
+   
   }
+  
+  animalesMostrar:boolean;
 
   alimentos:boolean;
   abrigo:boolean;
@@ -24,42 +29,35 @@ export class PortadaComponent implements OnInit {
   abrigoActivo:number;
   trabajoActivo:number;
 
-  abrirAlimento(){
-    this.alimentos = true;
-    this.abrigo = false;
-    this.trabajo = false;
+
+  abrirProducto(producto:number){
+    let filter;
+
+    this.animalesMostrar = false;
     this.servicioParametros.disparadorPararmetro.emit({
       data:false
     });
-    this.alimentoActivo = 1;
-    this.abrigoActivo = 0
-    this.trabajoActivo = 0
-  }
 
-  abrirAbrigo(){
-    this.abrigo = true;
-    this.alimentos = false;   
-    this.trabajo = false;
-    this.servicioParametros.disparadorPararmetro.emit({
-      data:false
-    });
-    this.abrigoActivo = 1
-    this.alimentoActivo = 0;
-    this.trabajoActivo = 0;
+    if (producto == 1){
+      this.alimentoActivo = 1;
+      this.abrigoActivo = 0;
+      this.trabajoActivo = 0;
+      filter = "Alimento";
+    } else if(producto == 2){
+      this.alimentoActivo = 0;
+      this.abrigoActivo = 1;
+      this.trabajoActivo = 0;
+      filter = "Abrigo";
+    }else{
+      this.alimentoActivo = 0;
+      this.abrigoActivo = 0;
+      this.trabajoActivo = 1;
+      filter = "Trabajo";
+    }
 
-  }
-
-  abrirTrabajo(){
-    this.trabajo = true;
-    this.alimentos = false;
-    this.abrigo = false;
-    this.servicioParametros.disparadorPararmetro.emit({
-      data:false
-    });
-    this.trabajoActivo = 1;
-    this.alimentoActivo = 0;
-    this.abrigoActivo = 0;
-    
+    this.servicioParametros.getProductos().subscribe((data)=>{
+      this.listProductos = data.filter(d => d.categoria == filter);
+    })   
   }
 
   openDialog():void {
